@@ -195,3 +195,9 @@ body {
   display: flex;
   flex-direction: row;
 }
+
+@media screen and (max-width: 1200px) {
+  body {
+    padding: 20px 200px;
+  }
+}
