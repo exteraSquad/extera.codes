@@ -1,10 +1,10 @@
 body {
   font-size: 10pt;
-  background-color: #202020;
+  background-color: #171717;
   color: white;
   font-family: Mont;
   font-weight: 600;
-  padding: 10px 20px;
+  padding: 5px 5px;
   -webkit-tap-highlight-color: #FFFFFF00;
   -moz-tap-highlight-color: #FFFFFF00;
   -webkit-touch-callout: none;
@@ -67,16 +67,17 @@ body {
   border: 2px solid #505050;
   color: white;
   padding: 15px;
-  margin: 3px 3px;
+  margin: 5px 2px 0 2px;
   transition: 0.3s;
   text-align: center;
 }
 
 .src {border-radius: 20px 5px 5px 5px;}
-.dwn {border-radius: 5px 5px 20px 20px;}
+.beta {border-radius: 5px 5px 20px 20px;}
+.dwn {border-radius: 5px 5px 5px 5px;}
 .tg {border-radius: 5px 20px 5px 5px;}
 
-.tg, .src {width: 100%; margin-top: 15px;}
+.tg, .src {width: 100%; margin-top: 20px;}
 
 .btn:hover {
   font-size: 15px;
@@ -152,7 +153,7 @@ body {
   border-radius: 20px;
   padding: 20px;
   box-shadow: 0 0 5px #00000020;
-  font-family: 'Fira Mono', monospace;
+  font-family: Mont;
 }
 
 .credits {
@@ -161,9 +162,7 @@ body {
   color: #909090;
 }
 
-.listbtn:active {
-  background: #FFFFFF20;
-}
+.listbtn:active {background: #FFFFFF20;}
 
 .actbtns {
   margin: auto 0 auto auto;
@@ -177,7 +176,6 @@ body {
   border-radius: 100px;
   margin: auto 0 auto auto;
   cursor: pointer;
-  box-shadow: 0 0 5px #00000020;
 }
 
 @keyframes blink {
@@ -194,10 +192,4 @@ body {
 .bash {
   display: flex;
   flex-direction: row;
-}
-
-@media screen and (max-width: 1200px) {
-  body {
-    padding: 20px 200px;
-  }
 }
