@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/fonts/fonts.css">
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="assets/js/getLatestVersion.js"></script>
     </head>
     <body>
         <div id="page-preloader">
@@ -27,7 +28,12 @@
             <div class="bash">
                 <div class="terminal"> <span style="color: greenyellow">extera@ubuntu</span>:<span style="color: cornflowerblue">~</span>$ cat info.txt </div>
             </div>
-              <div> version="8.7.4"<br>type="stable" </div>
+              <div id="version">
+                <script>
+                    var version = getLatestVersion();
+                    document.getElementById("version").innerHTML = 'version="' + version + '<br> type="stable"';
+                </script>
+              </div>
             <div><br></div>
             <div class="bash">
                 <div class="terminal"><span style="color: greenyellow">extera@ubuntu</span>:<span style="color: cornflowerblue">~</span>$ cat features.txt</div>
