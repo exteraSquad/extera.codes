@@ -73,12 +73,13 @@ body {
 }
 
 .src {border-radius: 20px 5px 5px 5px;}
-.beta {border-radius: 5px 5px 5px 5px;}
-.web {border-radius: 5px 5px 20px 20px;}
+.beta {border-radius: 5px 5px 5px 20px;}
+.web {border-radius: 5px 5px 20px 5px;}
 .dwn {border-radius: 5px 5px 5px 5px;}
 .tg {border-radius: 5px 20px 5px 5px;}
 
-.tg, .src {width: 100%; margin-top: 20px;}
+.tg, .src {margin-top: 20px;}
+.tg, .src, .beta, .web{width: 100%;}
 
 .btn:hover {
   font-size: 15px;
@@ -112,11 +113,21 @@ body {
   box-shadow: 0 0 5px #00000020;
 }
 
+.list a:hover .listbtn {
+  background: transparent;
+}
+
+.list a:hover .listpic:hover {
+  width: 100px;
+  height: 100px;
+}
+
 .listpic {
   height: 50px;
   width: 50px;
   background: #FFFFFF10;
   border-radius: 100px;
+  transition: 0.3s;
 }
 
 .listdesc {
@@ -163,7 +174,7 @@ body {
   color: #909090;
 }
 
-.listbtn:active {background: #FFFFFF20;}
+.listbtn:active {color: #FFFFFF20;}
 
 .actbtns {
   margin: auto 0 auto auto;
@@ -177,6 +188,7 @@ body {
   border-radius: 100px;
   margin: auto 0 auto auto;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 @keyframes blink {
