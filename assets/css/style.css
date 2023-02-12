@@ -152,6 +152,72 @@ body {
   align-self: center;
 }
 
+.fired {
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  -webkit-tap-highlight-color: #FFFFFF00;
+  -moz-tap-highlight-color: #FFFFFF00;
+}
+
+.fired a {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  transition: 0.3s;
+  margin: 5px 0px;
+  padding: 5px;
+}
+
+.fired a:hover {
+  background: #00000040;
+  padding: 10px 10px;
+  margin: 10px 0px;
+  border-radius: 20px;
+  box-shadow: 0 0 5px #00000020;
+}
+
+.fired a:hover .firedbtn {
+  background: transparent;
+}
+
+.fired a:hover .firedpic:hover {
+  width: 100px;
+  height: 100px;
+}
+
+.firedpic {
+  height: 50px;
+  width: 50px;
+  background: #FFFFFF10;
+  border-radius: 100px;
+  transition: 0.3s;
+}
+
+.fireddesc {
+  font-size: 10px;
+  color: #848484;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: auto;
+}
+
+.firedname {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.firedinfo {
+  height: auto;
+  color: white;
+  text-align: left;
+  color: white;
+  margin-left: 12px;
+  align-self: center;
+}
+
 .horiz {
   display: flex;
   flex-direction: row;
